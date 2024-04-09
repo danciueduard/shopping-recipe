@@ -20,8 +20,8 @@ export interface AuthResponseData {
 export class AuthService {
   apiKEY = environment.firebaseKey;
 
-  private SIGN_UP = `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${this.apiKEY}`;
-  private LOG_IN = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${this.apiKEY}`;
+  private SIGN_UP = `%LINK%`;
+  private LOG_IN = `%LINK%`;
 
   user = new BehaviorSubject<User>(null);
   private tokenExpirationTimer: any;
